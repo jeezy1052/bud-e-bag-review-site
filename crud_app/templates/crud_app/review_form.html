@@ -1,0 +1,17 @@
+{% extends 'crud_app/base/base.html' %}
+{% load static %}
+
+{% block content %}
+<section class="bg-success pt-5 container-fluid">
+    <h1 class="text-light  text-center mb-5 ">Changing The Way Reviews Are Made</h1>
+    <div class="form-group ">
+      <form action="" method=POST class="col-md-4 m-auto" enctype="multipart/form-data">
+        {% csrf_token %}
+        
+        {{ form.as_p }}
+        <input type="submit" value="Submit" class=" text-success btn-lg  btn-light">  
+    </form>
+    </div>
+</section>
+{% endblock content %}
+

@@ -1,0 +1,33 @@
+{% extends 'crud_app/base/base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="container mt-5">
+        
+    <div class="col-md-6 text-center m-auto p-3">
+        <h1 class='text-success'>Check Out Our Database</h1>
+        <p class="p-2 text-success">We have a collection of rated reviews. To help you find the best strains quick and easy. No more trying to remember what your favorites are.</p>
+        
+        <a class="" href="review_form"><button class='btn btn-success btn-fluid'>Leave A Review</button></a>
+    </div>
+    <hr class='text-success'>
+
+{% for name in reviewer_from_context %}
+    <div class="card-deck mb-3 text-center m-auto col-lg-8">
+        <div class="card mb-4 box-shadow">
+            <div class="card-header bg-success">
+            <h4 class="my-0 font-weight-normal text-light">{{ name.strain }}</h4>
+            </div>
+            <div class="card-body ">
+            <ul class="list-unstyled mt-3 mb-4">
+                <li>{{ name.username }}</li>
+                <li>{{ name.strain }}</li>
+                <li>{{ name.review }}</li>
+            </ul>
+            </div>
+        </div>
+    </div>
+{% endfor %}
+    
+{% endblock content %}
+

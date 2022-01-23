@@ -1,0 +1,57 @@
+{% extends 'crud_app/base/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container-fluid mb-4">
+    <div class="col-lg-12 text-center">
+      <img class="img-fluid" src="{% static 'crud_app/images/logo.jpg' %}" alt="">
+    </div> 
+    <div class="col-lg-4 col-md-4 col-sm-4  m-auto ">
+      <img class="img-fluid center-block " src="{% static 'crud_app/images/bag.jpg' %}" alt="">
+    </div>
+  </div>
+  <section class="test bg-success text-light ">
+    <h2 class="text-center pt-5">Testimonials</h2>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner p-3">
+          <div class="carousel-item active">
+            <div class="col-lg-2 m-auto pt-5">
+              <img class=" col-md-2 img-fluid w-100 rounded-circle" src="{% static 'crud_app/images/girl-in-red.jpg' %}" alt="First slide">
+            </div>
+            
+            <p class="text-center p-">"Just what I was looking for. I wish I would have thought of it first. <br> I am really satisfied with my Ceramic Coating."<br>
+                - Klarrisa P.
+                
+                </p>
+          </div>
+          <div class="carousel-item">
+            <p class="text-center">"Just what I was looking for. I wish I would have thought of it first. <br> I am really satisfied with my Ceramic Coating."<br>
+                - Klarrisa P.
+                
+                </p>
+          </div>
+          <div class="carousel-item">
+            <p class="text-center">"Just what I was looking for. I wish I would have thought of it first. <br> I am really satisfied with my Ceramic Coating."<br>
+                - Klarrisa P.  
+            </p>
+            
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+</section>
+
+{% endblock content %}
+
